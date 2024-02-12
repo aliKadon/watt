@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:watt_assessment/app/utils/helpers.dart';
 import 'package:watt_assessment/presentations/resources/color_manager.dart';
 import 'package:watt_assessment/presentations/resources/font_manager.dart';
-import 'package:watt_assessment/screens/home_screen/home_page.dart';
 import 'package:watt_assessment/screens/login_screen/controller/login_getx_controller.dart';
 
 class LoginPage extends StatefulWidget {
@@ -17,17 +16,7 @@ class _LoginPageState extends State<LoginPage> with Helpers {
   //controller
   final LoginGetXController _loginGetXController = Get.put(LoginGetXController());
   var passwordVisible = true;
-  // late final GlobalKey<FormState> formKey = GlobalKey();
-  // final TextEditingController _emailEditingController = TextEditingController();
-  // final TextEditingController _passwordEditingController =
-  //     TextEditingController();
 
-  // @override
-  // void dispose() {
-  //   super.dispose();
-  //   _emailEditingController.dispose();
-  //   _passwordEditingController.dispose();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -164,23 +153,6 @@ class _LoginPageState extends State<LoginPage> with Helpers {
                                                         25.r)))),
                                     onPressed: () {
                                       controller.login(context: context);
-                                      // if (!formKey.currentState!.validate())
-                                      //   return;
-                                      // formKey.currentState!.save();
-                                      // if (_emailEditingController.text !=
-                                      //         "admin" ||
-                                      //     _passwordEditingController.text !=
-                                      //         "P@ssw0rd") {
-                                      //   showSnackBar(context,
-                                      //       message:
-                                      //           "Invalid email or password!",error: true);
-                                      // } else {
-                                      //   Navigator.of(context).pushReplacement(
-                                      //     MaterialPageRoute(
-                                      //       builder: (context) => MyHomePage(),
-                                      //     ),
-                                      //   );
-                                      // }
                                     },
                                     child:
                                         const Text("Log in with your account")),
